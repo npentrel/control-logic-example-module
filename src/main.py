@@ -20,6 +20,7 @@ class ControlLogic(Generic, EasyResource):
     MODEL: ClassVar[Model] = Model(
         ModelFamily("naomi", "my-control-logic"), "control-logic"
     )
+    running = None
     task = None
     event = Event()
 
