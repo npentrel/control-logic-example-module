@@ -80,7 +80,7 @@ class ControlLogic(Generic, EasyResource):
     async def control_loop(self):
         while not self.event.is_set():
             await self.on_loop()
-            await asyncio.sleep(1)
+            await asyncio.sleep(0)
 
     async def on_loop(self):
         try:
@@ -89,6 +89,7 @@ class ControlLogic(Generic, EasyResource):
 
         except Exception as err:
             LOGGER.error(err)
+        await asyncio.sleep(1)
 
     def __del__(self):
         self.stop()
