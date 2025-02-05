@@ -80,7 +80,7 @@ class ControlLogic(Generic, EasyResource):
     async def control_loop(self):
         while not self.event.is_set():
             await self.on_loop()
-            await asyncio.sleep(0)
+            await asyncio.sleep(1)
 
     async def on_loop(self):
         try:
