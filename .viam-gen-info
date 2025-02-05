@@ -1,0 +1,12 @@
+{
+  "module_name": "my-control-logic",
+  "namespace": "naomi",
+  "language": "python",
+  "resource_type": "component",
+  "resource_subtype": "generic",
+  "model_name": "control-logic",
+  "enable_cloud_build": true,
+  "initialize_git": false,
+  "generator_version": "0.1.0",
+  "generated_on": "2025-02-04T19:18:34.634964Z"
+}
