@@ -62,7 +62,7 @@ class ControlLogic(Generic, EasyResource):
             config (ComponentConfig): The new configuration
             dependencies (Mapping[ResourceName, ResourceBase]): Any dependencies (both implicit and explicit)
         """
-        if self.running is not None:
+        if self.running is None:
             self.start()
         else:
             LOGGER.info("Already running control logic.")
