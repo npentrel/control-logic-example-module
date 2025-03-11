@@ -84,7 +84,7 @@ class ControlLogic(Generic, EasyResource):
 
     async def on_loop(self):
         try:
-            LOGGER.info("Executing control logic")
+            LOGGER.debug("Executing control logic")
             # TODO: ADD CONTROL LOGIC
 
         except Exception as err:
