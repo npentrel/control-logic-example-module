@@ -105,11 +105,11 @@ class ControlLogic(Generic, EasyResource):
         **kwargs
     ) -> Mapping[str, ValueTypes]:
         result = {key: False for key in command.keys()}
-        for name, _args in command.items():
-            if name == "start":
+        for name, args in command.items():
+            if name == "action" and args == "start":
                 self.start()
                 result[name] = True
-            if name == "stop":
+            if name == "action" and args == "stop":
                 self.stop()
                 result[name] = True
         return result

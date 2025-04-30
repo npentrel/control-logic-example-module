@@ -8,7 +8,7 @@
     {
       "api": "rdk:component:generic",
       "model": "naomi:my-control-logic:control-logic",
-      "short_description": "Provide a short (100 characters or less) description of this model here",
+      "short_description": "Example module for implementing control logic.",
       "markdown_link": "README.md#model-naomimy-control-logiccontrol-logic"
     }
   ],
@@ -20,8 +20,7 @@
     "path": "dist/archive.tar.gz",
     "arch": [
       "linux/amd64",
-      "linux/arm64",
-      "linux/arm32v7"
+      "linux/arm64"
     ]
   }
 }
